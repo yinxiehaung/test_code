@@ -60,7 +60,6 @@ void create_iterator(Object_t *obj, Iterator_t *iter_storage) {
     obj->vtable->create_iterator(obj, iter_storage);
   }
 }
-
 void create_reverse_iterator(Object_t *obj, Iterator_t *iter_storage) {
   if (obj && obj->vtable && obj->vtable->create_reverse_iterator) {
     obj->vtable->create_reverse_iterator(obj, iter_storage);
